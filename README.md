@@ -1,1 +1,1 @@
-# Diretório voltado para o corso de S.I no IFSULDEMINAS
+# Diretório voltado para o curso de S.I no IFSULDEMINAS
