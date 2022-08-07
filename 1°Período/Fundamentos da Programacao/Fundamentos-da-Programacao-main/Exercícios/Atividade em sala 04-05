@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numeroHab, contador
+		real taxaCrescimento
+
+		escreva("Qual o numero de habitantes? ")
+		leia( numeroHab)
+		escreva("Qual a taxa de crescimento?")
+		leia(taxaCrescimento)
+
+		taxaCrescimento = taxaCrescimento / 100
+
+		para (contador = 1; contador <= 15; contador++) {
+			numeroHab = numeroHab + (numeroHab * taxaCrescimento)
+			escreva("\nA taxa de crescimento do ano " +contador +" é " +numeroHab)
+		}
+	}
+}

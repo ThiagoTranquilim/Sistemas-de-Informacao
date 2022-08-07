@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro base, expoente, resultado, contador, base1
+
+		escreva("Digite a base: ")
+		leia(base)
+
+		escreva("Qual o expoente? ")
+		leia(expoente)
+
+		base1 = base
+		para (contador = 2; contador <= expoente; contador++){
+		resultado = base * base1
+		base = resultado
+		escreva(resultado+"\n")}
+	}
+}

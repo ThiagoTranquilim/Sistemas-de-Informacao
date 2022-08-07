@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro competidores, pontosnecessarios, contador, ponto1, ponto2, pontoTotal, competidorPassados
+
+		pontoTotal = 0
+		competidorPassados = 0
+		escreva("Qual é o numero de competidores e o numero de pontos necessarios? ")
+		leia(competidores, pontosnecessarios)
+
+		se ( 1<= competidores e competidores <= 100 e 1<= pontosnecessarios e 1000>= pontosnecessarios){
+			para(contador = 1; contador <= competidores; contador++) {
+				escreva("Qual é a pontuacao da 1 fase? E da segunda? ")
+				leia(ponto1, ponto2)
+				pontoTotal = ponto1 + ponto2
+				se (pontoTotal >= pontosnecessarios){
+					competidorPassados++
+				}
+			}
+			escreva("O numero de competidores passados é " +competidorPassados)
+		}
+	}
+}

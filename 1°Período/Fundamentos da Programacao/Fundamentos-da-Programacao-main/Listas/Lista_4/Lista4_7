@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro sequencia, a, s, n1, d
+		a = 0
+		s = 0
+		d = 1
+
+		leia(n1)
+		para(sequencia = 1; sequencia <= n1; sequencia++) {
+		s = a + d
+		a = d
+		d = s
+		
+		escreva(s +"\n")
+		}
+	}
+}

@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador, contagem, acesso, acesso_total
+
+		acesso_total = 0
+
+		escreva("Qual o numero de dias que a lista contem? ")
+		leia(contagem)
+		para (contador = 1; contador <= contagem ; contador++){
+			escreva("Qual o numero de acesso do dia " +contador +"? ")
+			leia(acesso)
+			acesso_total += acesso
+
+			se (acesso_total >= 1000000)
+			pare
+			
+		}
+		escreva(contador)
+	}
+}

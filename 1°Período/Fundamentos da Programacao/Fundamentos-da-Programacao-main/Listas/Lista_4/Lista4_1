@@ -1,0 +1,13 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x, a, xRes
+
+		leia(x)
+		para (a = 1; a <= 10; a++){
+		xRes = x * a
+		escreva(xRes +"\n")}
+	}
+}

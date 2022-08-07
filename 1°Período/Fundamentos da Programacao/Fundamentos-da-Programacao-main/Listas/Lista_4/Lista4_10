@@ -1,0 +1,38 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador, sexo,  contador_masc, contador_fem
+		real altura, altura_masc, altura_fem, altura_total, resultado_total, altura_total_masc, altura_total_fem, resultado_masc, resultado_fem
+		altura_total = 0.0
+		altura_total_masc = 0.0
+		altura_total_fem = 0.0
+		contador_masc = 1
+		contador_fem = 1
+		
+		para (contador = 1; contador <= 10; contador++){
+		escreva("Qual é a altura? ")
+		leia(altura)
+		altura_total += altura
+		escreva("Qual o sexo? Masc - 1, Fem - 2\n")
+		leia(sexo)
+
+		escolha(sexo){
+		caso 1: altura_masc = altura
+		altura_total_masc += altura_masc
+		contador_masc++
+		caso 2: altura_fem = altura
+		altura_total_fem += altura_fem
+		contador_fem++
+		}
+		}
+		resultado_total = altura_total / 10
+		resultado_masc = altura_total_masc / contador_masc
+		resultado_fem = altura_total_fem / contador_fem
+
+		escreva("Média das alturas totais é " +resultado_total)
+		escreva("\nMédia das alturas masc é " +resultado_masc)
+		escreva("\nMédia das alturas fem é " +resultado_fem)
+	}
+}

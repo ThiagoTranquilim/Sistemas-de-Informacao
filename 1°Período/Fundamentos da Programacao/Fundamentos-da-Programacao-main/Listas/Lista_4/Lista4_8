@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real numero, contador, resultado1 = 0.0, contagem1 = 1.0, contagem2 = 1.0, resultado2 = 0.0
+
+		escreva("Escreva um numero ")
+		leia(numero)
+
+		para (contador = numero; contador >= 1; contador--){
+			resultado1 += contagem1 / contador
+			contagem1++
+			resultado2 +=contador / contagem2
+			contagem2++
+		}
+		escreva(resultado1+resultado2)
+	}
+}
